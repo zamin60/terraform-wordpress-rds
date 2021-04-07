@@ -212,7 +212,7 @@ resource "aws_db_instance" "myrds" {
   parameter_group_name = "default.mysql5.7"
   vpc_security_group_ids = [aws_security_group.wordpresstask-sg.id]
 
-  availability_zone = "us-east-1a"
+  availability_zone = "us-east-1b"
   publicly_accessible = false
   db_subnet_group_name = aws_db_subnet_group.sb-grp.id
   
